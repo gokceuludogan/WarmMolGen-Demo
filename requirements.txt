@@ -1,4 +1,4 @@
 pandas==1.4.2
-streamlit=1.12.0
-mols2grid=0.2.4
-transformers=4.21.1
+streamlit==1.12.0
+mols2grid==0.2.4
+transformers==4.21.1
