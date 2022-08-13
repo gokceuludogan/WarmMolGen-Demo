@@ -51,11 +51,11 @@ def chembertalm_demo():
     #     value=0.95,
     #     help=" If set to float < 1, only the most probable tokens with probabilities that add up to top_p or higher are kept for generation.",
     # )
-    do_sample = st.sidebar.selectbox(
-        "Sampling?",
-        (True, False),
-        help="Whether or not to use sampling; use beam decoding otherwise.",
-    )
+    do_sample = True # st.sidebar.selectbox(
+    #    "Sampling?",
+    #    (True, False),
+    #    help="Whether or not to use sampling; use beam decoding otherwise.",
+    #)
     # num_beams = st.sidebar.number_input(
     #     "Number of beams",
     #     min_value=0,
