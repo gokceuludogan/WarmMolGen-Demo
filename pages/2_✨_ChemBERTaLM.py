@@ -2,6 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
 import mols2grid
+import textwrap
 from transformers import RobertaForCausalLM, RobertaTokenizer, pipeline
 
 # @st.cache(allow_output_mutation=False, hash_funcs={Tokenizer: str})
