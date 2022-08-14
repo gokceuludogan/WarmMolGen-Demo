@@ -2,11 +2,16 @@
 
 This application demonstrates the generation capabilities of the models trained as part of the study below, which has been accepted for publication in Bioinformatics Published by Oxford University Press. The available models are:
 
-* WarmMolGen
-  - WarmMolGenOne (i.e. EncDecBase)
-  - WarmMolGenTwo (i.e. EncDecLM)
-* ChemBERTaLM
+* **WarmMolGen**
+  - **WarmMolGenOne** (i.e. *EncDecBase*)
+  
+    A target specific molecule generator where warm-started (i.e. initialized from pretrained models) model trained with one-stage starategy on targeted drug design.
+  - **WarmMolGenTwo** (i.e. *EncDecLM*)
+  
+    A target specific molecule generator where warm-started (i.e. initialized from pretrained models) model trained withtwo-stage strategy containing a pre-finetuning on molecular generation followed by target-specific training. 
+* **ChemBERTaLM**
 
+  A molecule generator model finetuned from ChemBERTa checkpoint. 
 ### Exploiting Pretrained Biochemical Language Models for Targeted Drug Design
 **Motivation:** The development of novel compounds targeting proteins of interest is one of the most important tasks in the pharmaceutical industry. Deep generative models have been applied to targeted molecular design and have shown promising results. Recently, target-specific molecule generation has been viewed as a translation between the protein language and the chemical language. However, such a model is limited by the availability of interacting protein–ligand pairs. On the other hand, large amounts of unlabelled protein sequences and chemical compounds are available and have been used to train language models that learn useful representations. In this study, we propose exploiting pretrained biochemical language models to initialize (i.e. warm start) targeted molecule generation models. We investigate two warm start strategies: (i) a one-stage strategy where the initialized model is trained on targeted molecule generation and (ii) a two-stage strategy containing a pre-finetuning on molecular generation followed by target-specific training. We also compare two decoding strategies to generate compounds: beamsearch and sampling.
 
