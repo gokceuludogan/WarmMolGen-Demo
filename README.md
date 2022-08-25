@@ -13,6 +13,9 @@ This application demonstrates the generation capabilities of the models trained 
 
   A molecule generator model finetuned from ChemBERTa checkpoint. 
 
+### Demo 
+The live demo is available in Hugging Face Spaces: https://huggingface.co/spaces/gokceuludogan/WarmMolGen
+
 ### Usage
 * Install requirements via `pip` dependency manager. 
   ```
