@@ -19,7 +19,7 @@ The live demo is available in Hugging Face Spaces: https://huggingface.co/spaces
 ### Usage
 * Install requirements via `pip` dependency manager. 
   ```
-  pip install requirements.txt 
+  pip install -r requirements.txt 
   ``` 
 * Run application:
   ```
